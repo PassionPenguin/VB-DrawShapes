@@ -53,6 +53,6 @@ CreateRings x, y, r, num, colors
 End Sub
 
 
-Rem &copy Penguin, Open source under CC0
-Rem Github Project REF:
+Rem &copy Penguin, Open source under Mozilla Public License Version 2.0
+Rem Github Project REF: https://github.com/PassionPenguin/VB-DrawCircles
 Rem POWERD BY GLACIER ELEMENT, a Penguin's Proj
