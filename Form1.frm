@@ -20,7 +20,7 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
-Public Function CreateRings(ByVal x As Integer, ByVal y As Integer, ByVal r As Integer, ByVal num As Integer, ByVal colors As String)
+Public Function CreateRings(ByVal x As Integer, ByVal y As Integer, ByVal r As Integer, ByVal num As Integer)
 For k = 1 To num
 'for different cols
 x = x + 3000
@@ -29,7 +29,7 @@ Next
 End Function
 
 Private Sub Form_DblClick()
-Dim colors As Variant, x, y, r, num As Integer
+Dim x, y, r, num As Integer
 r = 2500
 DrawWidth = 10
 
@@ -38,17 +38,17 @@ DrawWidth = 10
 num = 5
 x = 0
 y = 3000
-CreateRings x, y, r, num, colors
+CreateRings x, y, r, num
 'second row
 num = 4
 x = 1500
 y = 4500
-CreateRings x, y, r, num, colors
+CreateRings x, y, r, num
 'third row
 num = 3
 x = 3000
 y = 6000
-CreateRings x, y, r, num, colors
+CreateRings x, y, r, num
 'program ends with code 0
 End Sub
 
