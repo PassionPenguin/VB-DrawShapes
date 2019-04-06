@@ -28,5 +28,4 @@ eg.
 
 ©Penguin, Open Source Under Moz Via GitHub.
 
-[!Logo](https://github.com/PassionPenguin/VB-DrawCircles/blob/master/GlacierElement.png?raw=true)
 ![GLACIER](/GlacierElement.png)
