@@ -20,35 +20,47 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
-Public Function CreateRings(ByVal x As Integer, ByVal y As Integer, ByVal r As Integer, ByVal num As Integer)
-For k = 1 To num
-'for different cols
-x = x + 3000
-Circle (x, y), r, RGB(Rnd * 255, Rnd * 255, Rnd * 255)
-Next
+Dim aShape(10#) As Shape
+Dim curShape As Integer
+
+Public Function CreateShape(ByVal x, ByVal y, ByVal a, ByVal b, ByVal t As Integer, Optional ByVal bc, Optional ByVal fc As String = vbRed)
+With aShape(curShape)
+.Width = a
+.Height = b
+.Left = x
+.Top = y
+.BorderColor = bc
+.FillColor = fc
+.Shape = t
+.FillStyle = 0
+End With
 End Function
 
+Private Sub form_load()
+curShape = 0
+For i = 0 To 10# - 1
+Set aShape(i) = Controls.Add("VB.Shape", Replace("Shape" + Str(i), " ", ""))
+With aShape(i)
+.Width = r
+.Left = x
+.Top = y
+.BorderColor = Color
+.Visible = True
+End With
+Next
+End Sub
+
 Private Sub Form_DblClick()
-Dim x, y, r, num As Integer
-r = 2500
-DrawWidth = 10
-
-
-'first row
-num = 5
-x = 0
-y = 3000
-CreateRings x, y, r, num
-'second row
-num = 4
-x = 1500
-y = 4500
-CreateRings x, y, r, num
-'third row
-num = 3
+Dim x, y, a, shapetype As Integer
+a = 2500
+b = 2500
 x = 3000
-y = 6000
-CreateRings x, y, r, num
+y = 3000
+shapetype = 3
+
+CreateShape x, y, a, b, shapetype, vbBlue, vbGreen
+
+
 'program ends with code 0
 End Sub
 
