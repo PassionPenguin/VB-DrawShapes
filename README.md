@@ -1,3 +1,5 @@
+![GLACIER](/GlacierElement.png)
+
 # VB-DrawShape
 
 ## Intro
@@ -27,5 +29,3 @@ eg.
     CreateShape x, y, a, b, shapetype, vbBlue, vbGreen
 
 ©Penguin, Open Source Under Moz Via GitHub.
-
-![GLACIER](/GlacierElement.png)
