@@ -33,6 +33,7 @@ With aShape(curShape)
 .FillColor = fc
 .Shape = t
 .FillStyle = 0
+.Visible = True
 End With
 End Function
 
@@ -40,13 +41,6 @@ Private Sub form_load()
 curShape = 0
 For i = 0 To 10# - 1
 Set aShape(i) = Controls.Add("VB.Shape", Replace("Shape" + Str(i), " ", ""))
-With aShape(i)
-.Width = r
-.Left = x
-.Top = y
-.BorderColor = Color
-.Visible = True
-End With
 Next
 End Sub
 
