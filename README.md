@@ -28,4 +28,4 @@ eg.
 
 ©Penguin, Open Source Under Moz Via GitHub.
 
-[!Logo](./GlacierElement.svg)
+[!Logo](./GlacierElement.png)
