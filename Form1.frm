@@ -13,13 +13,16 @@ Begin VB.Form Form1
    ScaleHeight     =   11697.18
    ScaleMode       =   0  'User
    ScaleWidth      =   28609.12
-   StartUpPosition =   3  '����ȱʡ
+   StartUpPosition =   3  '´°¿ÚÈ±Ê¡
 End
 Attribute VB_Name = "Form1"
 Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
+
+
+‘ 项目主题 MAIN CODE
 Dim aShape(10#) As Shape
 Dim curShape As Integer
 
