@@ -22,7 +22,7 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 
 
-‘ 项目主题 MAIN CODE
+‘ 项目主体 MAIN CODE
 Dim aShape(10#) As Shape
 Dim curShape As Integer
 
@@ -62,6 +62,6 @@ CreateShape x, y, a, b, shapetype, vbBlue, vbGreen
 End Sub
 
 
-Rem &copy Penguin, Open source under Mozilla Public License Version 2.0
-Rem Github Project REF: https://github.com/PassionPenguin/VB-DrawCircles
-Rem POWERD BY GLACIER ELEMENT, a Penguin's Proj
+' &copy Penguin, Open source under Mozilla Public License Version 2.0
+' Github Project REF: https://github.com/PassionPenguin/VB-DrawCircles
+' POWERD BY GLACIER ELEMENT, a Penguin's Proj
